@@ -2029,3 +2029,87 @@ Button animation
     @media (min-width: 576px) {
       .team__slide {
         max-width: unset; } }
+
+/* ==============================
+#Direction
+ ================================ */
+.direction {
+  background-color: #f2f7fa;
+  padding-top: 29px;
+  position: relative; }
+  .direction__title {
+    margin-bottom: 13px; }
+    @media (min-width: 768px) {
+      .direction__title {
+        margin-bottom: 21px; }
+        .direction__title span {
+          display: block; } }
+  .direction__text {
+    margin-bottom: 13px; }
+    @media (min-width: 768px) {
+      .direction__text {
+        margin-bottom: 44px; } }
+  .direction__list {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 10px;
+    margin-bottom: 22px; }
+    @media (min-width: 576px) {
+      .direction__list {
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 34px; } }
+    @media (min-width: 992px) {
+      .direction__list {
+        -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr); } }
+  .direction__item {
+    padding: 32px 20px 23px;
+    position: relative;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    overflow: hidden; }
+    .direction__item > * {
+      position: relative;
+      z-index: 1; }
+    .direction__item::after {
+      position: absolute;
+      content: attr(data-count);
+      top: 0;
+      right: 0;
+      font-weight: 700;
+      font-size: 150px;
+      line-height: 1;
+      right: -20px;
+      color: #f2f7fa; }
+    .direction__item-title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 13px; }
+    .direction__item-price {
+      font-size: 18px;
+      line-height: 22px;
+      color: #ff9200;
+      margin-bottom: 10px; }
+    .direction__item-text {
+      margin-bottom: 36px; }
+    .direction__item-button {
+      -webkit-box-shadow: unset;
+              box-shadow: unset;
+      margin-top: auto; }
+  .direction__image {
+    -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+            transform: translateY(50%);
+    margin-top: -50px; }
