@@ -902,6 +902,41 @@ Text position
 /* ==============================
 Custom slider
  ================================ */
+.s-slider__controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 99%;
+  z-index: 2; }
+  .s-slider__controls-item {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+    cursor: pointer; }
+
 /* Functional styling;
  * These styles are required for noUiSlider to function.
  * You don't need to change these rules to apply your design.
@@ -1948,3 +1983,49 @@ Button animation
     @media (min-width: 1300px) {
       .outsourcing__image {
         right: -300px; } }
+
+/* ==============================
+#Team
+ ================================ */
+.team {
+  padding-top: 91px;
+  padding-bottom: 34px; }
+  @media (min-width: 576px) {
+    .team {
+      padding-top: 151px; } }
+  @media (min-width: 768px) {
+    .team {
+      padding-top: 91px;
+      padding-bottom: 89px; } }
+  @media (min-width: 1200px) {
+    .team {
+      padding-top: 151px; } }
+  .team__title {
+    margin-bottom: 26px; }
+    @media (min-width: 768px) {
+      .team__title {
+        margin-bottom: 69px; } }
+  .team__item {
+    text-align: center; }
+    .team__item-image {
+      width: 203px;
+      height: 203px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px; }
+    .team__item-name {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 6px; }
+    .team__item-position {
+      font-size: 16px;
+      line-height: 19px;
+      color: #20a0c9; }
+  .team__slide {
+    max-width: 203px; }
+    @media (min-width: 576px) {
+      .team__slide {
+        max-width: unset; } }
