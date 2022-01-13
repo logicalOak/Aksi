@@ -2441,3 +2441,111 @@ Button animation
             align-items: center; }
     .footer__audit-whatsapp-ico {
       margin-left: 16px; }
+
+/* ==============================
+#Contacts
+ ================================ */
+.contacts__inner {
+  padding-bottom: 25px; }
+  @media (min-width: 768px) {
+    .contacts__inner {
+      padding-bottom: 64px; } }
+
+.contacts__title {
+  margin-bottom: 21px; }
+  @media (min-width: 768px) {
+    .contacts__title {
+      margin-bottom: 29px; } }
+
+@media (min-width: 768px) {
+  .contacts__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 992px) {
+  .contacts__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 54px;
+       -moz-column-gap: 54px;
+            column-gap: 54px; } }
+
+@media (min-width: 1200px) {
+  .contacts__list {
+    -webkit-column-gap: 108px;
+       -moz-column-gap: 108px;
+            column-gap: 108px; } }
+
+.contacts__item:nth-child(1) {
+  margin-bottom: 35px; }
+
+.contacts__item:nth-child(2) {
+  margin-bottom: 24px; }
+
+.contacts__item-number-text:not(:last-child) {
+  margin-bottom: 15px; }
+
+.contacts__item-ico {
+  padding-left: 44px;
+  position: relative; }
+  .contacts__item-ico::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0; }
+  .contacts__item-ico--address::before {
+    background-image: url("../images/dist/aksi/contacts/map-ico.svg");
+    width: 23px;
+    height: 27px; }
+  .contacts__item-ico--number::before {
+    background-image: url("../images/dist/aksi/contacts/phone-ico.svg");
+    width: 23px;
+    height: 23px; }
+  .contacts__item-ico--mail::before {
+    background-image: url("../images/dist/aksi/contacts/mail-ico.svg");
+    width: 25px;
+    height: 20px; }
+
+.contacts__item-doc {
+  margin-top: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 44px; }
+  .contacts__item-doc img {
+    margin-right: 13px; }
+
+.contacts .social {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 192px;
+  max-width: 192px;
+  width: 100%;
+  margin-left: 44px; }
+  @media (min-width: 992px) {
+    .contacts .social {
+      margin-left: 0; } }
+  .contacts .social__link {
+    width: 48px;
+    height: 48px; }
+
+.contacts__map-frame {
+  min-height: 579px;
+  width: 100%;
+  border: 0;
+  vertical-align: middle; }
